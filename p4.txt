@@ -26,8 +26,9 @@ print('Если я угадаю ставь =, если нет ставь < ил�
 import random
 a = 1
 b = 100
-number = random.randint (a,b)
+
 while True :
+    number = random.randint(a, b)
     print(('Ваше число'), (number), ('?'))
     user = input()
     if user == '=' :
@@ -35,7 +36,5 @@ while True :
         break
     elif user == '<' :
         b = number-1
-        number = random.randint(a, b)
     else :
         a = number+1
-        number = random.randint(a, b)
