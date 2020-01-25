@@ -1,11 +1,13 @@
 import random
 words_list = ('автострада', 'бензин', 'инопланетянин', 'самолет',
               'библиотека', 'шайба', 'олимпиада', 'сноуборд')
+a = len(words_list)
 letter_rus = [chr(x) for x in range(1040, 1104)]
 letter_rus.append('ё')
 letter_rus.append('Ё')
 #print(letter_rus)
-for i in range (1, 100):
+for i in range (1, a):
+#   print (a)
     secret_word = random.choice(words_list)
     print(secret_word)
     gamer_word = ['*'] * len(secret_word)
